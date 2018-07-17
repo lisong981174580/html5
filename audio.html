@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>audio</title>
+</head>
+<body>
+<!--如果不需要转码-->
+<figure  style="display: flex;align-items: center">
+    <figcaption style="margin-right: 8px">音乐</figcaption>
+    <!--
+        src:路径mp3格式等
+        autoplay：自动播放
+        loop:循环次数  如果是-1那就是无数次
+        controls：显示控制器
+    -->
+    <audio src=""  autoplay="autoplay"   loop="1"  controls="controls">
+         如果浏览器不支持则显示是这里的文字
+    </audio>
+</figure>
+
+<!--如果需要转码-->
+<figure  style="display: flex;align-items: center">
+    <figcaption style="margin-right: 8px">音乐</figcaption>
+    <!--
+        src:路径mp3格式等
+        autoplay：自动播放
+        loop:循环次数  如果是-1那就是无数次
+        controls：显示控制器
+
+        type:转码器  首先是audio标签  完了是mpeg转码
+
+    -->
+    <audio  autoplay="autoplay"   loop="1"  controls="controls">
+        <source src="horse.mp3" type="audio/mpeg">
+    </audio>
+</figure>
+</body>
+</html>
